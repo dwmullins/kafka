@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  kafkaphp:
+    image: 'kafkaphp:latest'
+    container_name: kafka-php
+
+networks:
+  default:
+    external: true
+    name: app-tier    
